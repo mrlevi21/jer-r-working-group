@@ -1,8 +1,11 @@
 ###How to do some basic manipulation of data tables
 
-##Start off by "requiring" dplyr and stringr, although you need to have install.packages()ed them at some point previously or require() just throws an error
+##Start off by "requiring" dplyr, although you need to have install.packages()ed them at some point previously or require() just throws an error
+install.packages(dplyr)
 require(dplyr)
-require(stringr)
+#You can also use library(dplyr). If you want to decide which function is right for you, google them both and you can find
+#plenty of impassioned forum arguments
+
 #dplyr gives us a lot of useful commands for summarizing data, specifically group_by() and summarize()
 #It also includes the operator %>% from the package magrittr which basically means "take the output of
 #the previous function/operations and use it as the first argument in the next" sorta like a pipe, but "ceci n'est pas une pipe."
